@@ -69,22 +69,22 @@ def aho_find_all(s, root, callback):
             node = root
             continue
         node = node.goto[s[i]]
-        for pattern in node.out:
-            callback(node.weight, pattern)
+        callback(node.weight)
 
 
 ############################
 # Демонстрация работы алгоритма
 count = 0
-def on_occurence(weight, pattern):
+def on_occurence(weight):
     global count
     count += weight
 
 
-
+12317773616
+1544116132
 
 if __name__ == "__main__":
-    file = open("/home/anton/projects/hackerrank/javarank/src/ahocorasick/input7", "r")
+    file = open("/home/anton/projects/hackerrank/javarank/src/ahocorasick/input30", "r")
 
     n = int(file.readline().strip())
     genes = file.readline().strip().split(' ')
