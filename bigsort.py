@@ -37,7 +37,7 @@ def merge(arr, start, mid, end):
             arr[cur_idx] = arr[right_idx]
             right_idx += 1
         cur_idx += 1
-
+map = {}
 boundaries = []
 last_end = 0
 for idx in range(len(unsorted)-1):
